@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Minería",
+    "category": "Minería",
+    "content": "Casos de uso y éxito",
+    "description": "Soluciones de IA para optimizar procesos en minería.",
+    "icon": "https://picsum.photos/200/300/?blur=10",
+    "url": "/categoria/mineria",
+    "tags": ["Minería", "Optimización", "Producción"],
+    "cases": {
+      "success": [
+        {
+          "name": "Proyecto Mina Inteligente",
+          "images": ["https://picsum.photos/200/300"],
+          "descriptions": ["Implementación de sensores inteligentes para control de extracción."],
+          "logos": ["https://picsum.photos/200/300"]
+        }
+      ],
+      "use": [
+        {
+          "name": "Monitoreo de maquinaria",
+          "images": ["https://picsum.photos/200/300"],
+          "descriptions": ["Seguimiento en tiempo real del estado de las máquinas."],
+          "logos": []
+        }
+      ]
+    }
+  },
+  {
+    "title": "Banca",
+    "category": "Banca",
+    "content": "Casos de uso y éxito",
+    "description": "IA para la detección de fraude, análisis de riesgo y experiencia del cliente.",
+    "icon": "https://picsum.photos/200/300/?blur=9",
+    "url": "/categoria/banca",
+    "tags": ["Banca", "Seguridad", "Clientes"],
+    "cases": {
+      "success": [
+        {
+          "name": "Detección de fraude en tiempo real",
+          "images": ["https://picsum.photos/200/300"],
+          "descriptions": ["Sistema predictivo que alerta operaciones sospechosas."],
+          "logos": ["https://picsum.photos/200/300"]
+        }
+      ],
+      "use": [
+        {
+          "name": "Asistente virtual para clientes",
+          "images": ["https://picsum.photos/200/300/?blur=7"],
+          "descriptions": ["Chatbot con IA para atención 24/7."],
+          "logos": []
+        }
+      ]
+    }
+  },
+  {
+    "title": "Ciencia",
+    "category": "Ciencia",
+    "content": "Casos de uso y éxito",
+    "description": "IA aplicada a la investigación, análisis y visualización de datos científicos.",
+    "icon": "https://picsum.photos/200/300",
+    "url": "/categoria/ciencia",
+    "tags": ["Ciencia", "Datos", "Investigación"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  },
+  {
+    "title": "Agro",
+    "category": "Agro",
+    "content": "Casos de uso y éxito",
+    "description": "Optimización de cultivos, predicción de cosechas y gestión agrícola con IA.",
+    "icon": "https://picsum.photos/200/300/?blur=5",
+    "url": "/categoria/agro",
+    "tags": ["Agro", "Producción", "Gestión"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  },
+  {
+    "title": "Energía",
+    "category": "Energía",
+    "content": "Casos de uso y éxito",
+    "description": "Soluciones inteligentes para gestión y eficiencia energética.",
+    "icon": "https://picsum.photos/200/300/?blur=4",
+    "url": "/categoria/energia",
+    "tags": ["Energía", "Sostenibilidad", "Producción"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  },
+  {
+    "title": "Instituciones gubernamentales",
+    "category": "Instituciones gubernamentales",
+    "content": "Casos de uso y éxito",
+    "description": "Transformación digital y servicios ciudadanos con IA.",
+    "icon": "https://picsum.photos/id/870/200/300?grayscale&blur=2",
+    "url": "/categoria/gobierno",
+    "tags": ["Gobierno", "Ciudadanía", "Digitalización"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  },
+  {
+    "title": "Oil & Gas",
+    "category": "Oil & Gas",
+    "content": "Casos de uso y éxito",
+    "description": "Monitoreo, seguridad y optimización en la industria de Oil & Gas.",
+    "icon": "https://picsum.photos/200/300/?blur=2",
+    "url": "/categoria/oilgas",
+    "tags": ["Oil & Gas", "Producción", "Seguridad"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  },
+  {
+    "title": "Retail",
+    "category": "Retail",
+    "content": "Casos de uso y éxito",
+    "description": "IA para mejorar la experiencia del cliente y optimizar ventas.",
+    "icon": "https://picsum.photos/200/300/?blur=3",
+    "url": "/categoria/retail",
+    "tags": ["Retail", "Ventas", "Clientes"],
+    "cases": {
+      "success": [],
+      "use": []
+    }
+  }
+]
