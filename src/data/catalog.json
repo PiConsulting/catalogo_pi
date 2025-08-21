@@ -49,6 +49,12 @@
           "images": ["https://picsum.photos/200/300/?blur=7"],
           "descriptions": ["Chatbot con IA para atención 24/7."],
           "logos": []
+        },
+        {
+          "name": "Asistente virtual para clientes",
+          "images": ["https://picsum.photos/200/300/?blur=7"],
+          "descriptions": ["Chatbot con IA para atención 24/7."],
+          "logos": []
         }
       ]
     }

@@ -24,8 +24,8 @@ const Category = () => {
   }
 
   const allCases = [
-    ...category.cases.success.map((c) => ({...c, type: 'success'})),
-    ...category.cases.use.map((c) => ({...c, type: 'use'})),
+    ...category.cases.success.map((c, idx) => ({...c, type: 'success', realIndex: idx})),
+    ...category.cases.use.map((c, idx) => ({...c, type: 'use', realIndex: idx})),
   ]
 
   return (
@@ -80,7 +80,8 @@ const Category = () => {
                   key={index}
                   caseItem={caseItem}
                   categorySlug={categorySlug}
-                  caseIndex={index}
+                  caseIndex={caseItem.realIndex}
+                  caseType={caseItem.type}
                 />
               ))}
             </div>
