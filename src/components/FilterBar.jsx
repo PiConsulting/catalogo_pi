@@ -7,11 +7,12 @@ const FilterBar = ({tags, selectedTags, onTagClick, onClearFilters}) => {
         <button
           key={index}
           onClick={() => onTagClick(tag)}
-          className={` p-2 rounded-full text-base  font-normal transition-all duration-200 mx-1 whitespace-nowrap focus:outline-none ${
-            selectedTags.includes(tag)
-              ? 'bg-yellow-400 text-black shadow-sm'
-              : 'bg-yellow-200 text-gray-800 hover:bg-yellow-300'
-          }`}
+          className={`p-1 ps-2 py-2 m-2
+             rounded-full text-xs transition-all duration-200 mx-1  font-semibold whitespace-nowrap focus:outline-none ${
+               selectedTags.includes(tag)
+                 ? 'bg-yellow-400 text-black shadow-sm'
+                 : 'bg-yellow-200 text-gray-800 hover:bg-yellow-300'
+             }`}
         >
           {tag}
         </button>

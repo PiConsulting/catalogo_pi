@@ -1,10 +1,10 @@
-"use client"
-import { useParams, Link } from "react-router-dom"
-import Header from "../components/Header"
-import catalogData from "../data/catalog.json"
+'use client'
+import {useParams, Link} from 'react-router-dom'
+import Header from '../components/Header'
+import catalogData from '../data/catalog.json'
 
 const CaseDetail = () => {
-  const { categorySlug, caseType, caseIndex } = useParams()
+  const {categorySlug, caseType, caseIndex} = useParams()
 
   const category = catalogData.find((cat) => cat.url === `/categoria/${categorySlug}`)
 
@@ -22,7 +22,7 @@ const CaseDetail = () => {
     )
   }
 
-  const cases = caseType === "success" ? category.cases.success : category.cases.use
+  const cases = caseType === 'success' ? category.cases.success : category.cases.use
   const caseItem = cases[Number.parseInt(caseIndex)]
 
   if (!caseItem) {
@@ -31,7 +31,10 @@ const CaseDetail = () => {
         <Header />
         <div className="container mx-auto px-4 py-8 text-center">
           <h1 className="text-2xl font-bold text-gray-900">Caso no encontrado</h1>
-          <Link to={`/categoria/${categorySlug}`} className="text-yellow-500 hover:text-yellow-600 mt-4 inline-block">
+          <Link
+            to={`/categoria/${categorySlug}`}
+            className="text-yellow-500 hover:text-yellow-600 mt-4 inline-block"
+          >
             Volver a la categoría
           </Link>
         </div>
@@ -55,10 +58,10 @@ const CaseDetail = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">{caseItem.name}</h1>
           <span
             className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-              caseType === "success" ? "bg-green-100 text-green-800" : "bg-blue-100 text-blue-800"
+              caseType === 'success' ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'
             }`}
           >
-            {caseType === "success" ? "Caso de Éxito" : "Caso de Uso"}
+            {caseType === 'success' ? 'Caso de Éxito' : 'Caso de Uso'}
           </span>
         </div>
 
@@ -66,7 +69,7 @@ const CaseDetail = () => {
           {caseItem.images.map((image, index) => (
             <div key={index} className="space-y-4">
               <img
-                src={image || "/placeholder.svg"}
+                src={image || '/placeholder.svg'}
                 alt={`${caseItem.name} - Imagen ${index + 1}`}
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
@@ -79,14 +82,31 @@ const CaseDetail = () => {
           ))}
         </div>
 
+        {/* Información detallada tipo ARCOR */}
+        {Array.isArray(caseItem.info) && caseItem.info.length > 0 && (
+          <div className="bg-white border border-yellow-300 rounded-lg p-6 mb-12">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Información detallada</h3>
+            <div className="space-y-4">
+              {caseItem.info.map((item, idx) => (
+                <div key={idx} className="">
+                  <div className="font-semibold text-gray-800 text-base mb-1">{item.title}</div>
+                  <div className="text-gray-600 text-sm">{item.description}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {/* Fin de grid y detalles */}
         {caseItem.logos && caseItem.logos.length > 0 && (
           <div className="border-t pt-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Clientes Destacados</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              Clientes Destacados
+            </h3>
             <div className="flex flex-wrap justify-center items-center gap-8">
               {caseItem.logos.map((logo, index) => (
                 <img
                   key={index}
-                  src={logo || "/placeholder.svg"}
+                  src={logo || '/placeholder.svg'}
                   alt={`Cliente ${index + 1}`}
                   className="h-12 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />

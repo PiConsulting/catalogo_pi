@@ -6,7 +6,7 @@
     "description": "Soluciones de IA para optimizar procesos en minería.",
     "icon": "https://picsum.photos/200/300/?blur=10",
     "url": "/categoria/mineria",
-    "tags": ["Minería", "Optimización", "Producción"],
+    "tags": ["Optimización", "Producción"],
     "cases": {
       "success": [
         {
@@ -14,6 +14,18 @@
           "images": ["https://picsum.photos/200/300"],
           "descriptions": ["Implementación de sensores inteligentes para control de extracción."],
           "logos": ["https://picsum.photos/200/300"]
+        },
+        {
+          "name": "SITRANS -> Caso de facturas (Logística)",
+          "images": [],
+          "descriptions": ["Caso de éxito en logística: SITRANS - Caso de facturas."],
+          "logos": []
+        },
+        {
+          "name": "TENARIS -> Asistente en planta (Industria)",
+          "images": [],
+          "descriptions": ["Caso de éxito en industria: TENARIS - Asistente en planta."],
+          "logos": []
         }
       ],
       "use": [
@@ -33,30 +45,10 @@
     "description": "IA para la detección de fraude, análisis de riesgo y experiencia del cliente.",
     "icon": "https://picsum.photos/200/300/?blur=9",
     "url": "/categoria/banca",
-    "tags": ["Banca", "Seguridad", "Clientes"],
+    "tags": ["Seguridad", "Clientes"],
     "cases": {
-      "success": [
-        {
-          "name": "Detección de fraude en tiempo real",
-          "images": ["https://picsum.photos/200/300"],
-          "descriptions": ["Sistema predictivo que alerta operaciones sospechosas."],
-          "logos": ["https://picsum.photos/200/300"]
-        }
-      ],
-      "use": [
-        {
-          "name": "Asistente virtual para clientes",
-          "images": ["https://picsum.photos/200/300/?blur=7"],
-          "descriptions": ["Chatbot con IA para atención 24/7."],
-          "logos": []
-        },
-        {
-          "name": "Asistente virtual para clientes",
-          "images": ["https://picsum.photos/200/300/?blur=7"],
-          "descriptions": ["Chatbot con IA para atención 24/7."],
-          "logos": []
-        }
-      ]
+      "success": [],
+      "use": []
     }
   },
   {
@@ -66,7 +58,7 @@
     "description": "IA aplicada a la investigación, análisis y visualización de datos científicos.",
     "icon": "https://picsum.photos/200/300",
     "url": "/categoria/ciencia",
-    "tags": ["Ciencia", "Datos", "Investigación"],
+    "tags": ["Datos", "Investigación"],
     "cases": {
       "success": [],
       "use": []
@@ -79,9 +71,44 @@
     "description": "Optimización de cultivos, predicción de cosechas y gestión agrícola con IA.",
     "icon": "https://picsum.photos/200/300/?blur=5",
     "url": "/categoria/agro",
-    "tags": ["Agro", "Producción", "Gestión"],
+    "tags": ["Producción", "Gestión"],
     "cases": {
-      "success": [],
+      "success": [
+        {
+          "name": "CHIMU -> Predicción de pesos de pollos",
+          "images": [],
+          "descriptions": ["Caso de éxito en agro: CHIMU - Predicción de pesos de pollos."],
+          "logos": []
+        },
+        {
+          "name": "GDM -> NEOCHAT",
+          "images": [],
+          "descriptions": ["Caso de éxito en agro: GDM - NEOCHAT."],
+          "logos": [],
+          "info": [
+            {
+              "title": "Contexto del cliente",
+              "description": "Empresa del sector agroindustrial enfocada en genética de semillas. Necesidad: mejorar la experiencia de los visitantes en su página web, brindando respuestas inmediatas a consultas sobre la empresa y sus productos."
+            },
+            {
+              "title": "Problema / dolor",
+              "description": "Los visitantes de la web no encontraban fácilmente la información relevante. El canal de contacto estaba limitado a formularios y correos electrónicos, generando tiempos de respuesta largos. Esto reducía la efectividad del sitio como canal de comunicación y de generación de leads."
+            },
+            {
+              "title": "Solución propuesta por PI",
+              "description": "Implementamos NEOCHAT, un asistente conversacional integrado en la landing page de GDM. Basado en una arquitectura RAG (Retrieval Augmented Generation), el asistente combina información estructurada con modelos de lenguaje para dar respuestas precisas y actualizadas. Enfoque diferencial: diseñamos una solución escalable y de fácil mantenimiento, que permite a GDM ampliar el alcance del asistente con nuevos contenidos y fuentes de información."
+            },
+            {
+              "title": "Impacto logrado / resultados",
+              "description": "Respuestas inmediatas a visitantes, mejorando la experiencia de usuario. Reducción en tiempos de atención (de horas/días a segundos). Potencial aumento en la conversión de leads gracias a un canal de contacto más ágil."
+            },
+            {
+              "title": "Rol del equipo de PI",
+              "description": "Áreas involucradas: AI Engineering, Backend Developer, Frontend Developer y Cloud Architect. Nuestro aporte: implementar un asistente con IA generativa sobre arquitectura RAG, asegurando precisión en las respuestas y escalabilidad en el tiempo."
+            }
+          ]
+        }
+      ],
       "use": []
     }
   },
@@ -92,9 +119,8 @@
     "description": "Soluciones inteligentes para gestión y eficiencia energética.",
     "icon": "https://picsum.photos/200/300/?blur=4",
     "url": "/categoria/energia",
-    "tags": ["Energía", "Sostenibilidad", "Producción"],
+    "tags": ["Sostenibilidad", "Producción"],
     "cases": {
-      "success": [],
       "use": []
     }
   },
@@ -107,7 +133,32 @@
     "url": "/categoria/gobierno",
     "tags": ["Gobierno", "Ciudadanía", "Digitalización"],
     "cases": {
-      "success": [],
+      "success": [
+        {
+          "name": "CABA -> Asistente Virtual BOTI (Instituciones gubernamentales)",
+          "images": [],
+          "descriptions": [
+            "Caso de éxito en instituciones gubernamentales: CABA - Asistente Virtual BOTI."
+          ],
+          "logos": []
+        },
+        {
+          "name": "SUBSECRETARIA DE MEDIO AMBIENTE CHILE -> Inboxia como servicio (Instituciones gubernamentales)",
+          "images": [],
+          "descriptions": [
+            "Caso de éxito en instituciones gubernamentales: SUBSECRETARIA DE MEDIO AMBIENTE CHILE - Inboxia como servicio."
+          ],
+          "logos": []
+        },
+        {
+          "name": "ALCALDIA DE BOGOTA -> Inboxia como servicio (Instituciones gubernamentales)",
+          "images": [],
+          "descriptions": [
+            "Caso de éxito en instituciones gubernamentales: ALCALDIA DE BOGOTA - Inboxia como servicio."
+          ],
+          "logos": []
+        }
+      ],
       "use": []
     }
   },
@@ -118,9 +169,16 @@
     "description": "Monitoreo, seguridad y optimización en la industria de Oil & Gas.",
     "icon": "https://picsum.photos/200/300/?blur=2",
     "url": "/categoria/oilgas",
-    "tags": ["Oil & Gas", "Producción", "Seguridad"],
+    "tags": ["Producción", "Seguridad"],
     "cases": {
-      "success": [],
+      "success": [
+        {
+          "name": "YPF -> PYWO (Oil & Gas)",
+          "images": [],
+          "descriptions": ["Caso de éxito en oil & gas: YPF - PYWO."],
+          "logos": []
+        }
+      ],
       "use": []
     }
   },
@@ -131,9 +189,42 @@
     "description": "IA para mejorar la experiencia del cliente y optimizar ventas.",
     "icon": "https://picsum.photos/200/300/?blur=3",
     "url": "/categoria/retail",
-    "tags": ["Retail", "Ventas", "Clientes"],
+    "tags": ["Ventas", "Clientes"],
     "cases": {
-      "success": [],
+      "success": [
+        {
+          "name": "ARCOR -> Scraping de Noticias",
+          "images": [],
+          "descriptions": ["Caso de éxito en retail: ARCOR - Scraping de Noticias."],
+          "logos": [],
+          "info": [
+            {
+              "title": "Contexto del cliente",
+              "description": "Arcor es una de las principales compañías alimenticias de América Latina, con presencia global en alimentos, golosinas, agroindustria y packaging. Su escala internacional y la complejidad de sus cadenas de suministro la exponen de manera significativa a las fluctuaciones del mercado de commodities."
+            },
+            {
+              "title": "Problema / Desafío",
+              "description": "En 2023, el fuerte incremento en el precio del cacao llevó al área de Compras de Arcor a buscar una herramienta que les permitiera anticipar eventos globales con impacto en precios. Hasta entonces, la recolección de noticias era manual, dispersa y limitada a pocas fuentes, dificultando la detección temprana de riesgos."
+            },
+            {
+              "title": "Solución de PI",
+              "description": "PI diseñó una solución basada en tecnologías cloud de Microsoft e inteligencia artificial, con un núcleo de scraping y clasificación de noticias económicas. Desarrollada en Azure Databricks. Scrapers para Yahoo Finance + integración con GDELT. Modelos de IA generativa para clasificación semántica y análisis de sentimiento orientado a finanzas. Distribución de resultados mediante alertas automáticas en Webex y un tablero web en el portal de Compras. El enfoque permitió pasar de un modelo reactivo a uno anticipativo, con alertas diarias sobre eventos críticos."
+            },
+            {
+              "title": "Impacto y Resultados",
+              "description": "Anticipación de eventos clave: detección temprana de impactos climáticos, regulatorios y geopolíticos. Optimización del tiempo: reducción significativa del trabajo manual de búsqueda de información. Mejora en la toma de decisiones: acceso diario a información estructurada y contextualizada. Escalabilidad: la arquitectura puede adaptarse a otros commodities (café, trigo, soja, azúcar, oro, petróleo). Impacto estratégico: Compras pasó a operar con visión anticipada, mejorando la gestión de riesgos y eficiencia de costos."
+            },
+            {
+              "title": "Rol del equipo de PI",
+              "description": "El proyecto fue liderado desde el área de Data Science con un abordaje multirol que integró tareas de Data Engineering y Data Science en conjunto. Esto permitió abarcar el diseño de arquitectura, desarrollo de modelos de IA y despliegue en producción en un mismo flujo de trabajo."
+            },
+            {
+              "title": "Testimonio del cliente",
+              "description": "Llevamos casi cinco años colaborando con PI Consulting, y ese acompañamiento constante nos permitió evolucionar juntos en cada etapa de nuestra transformación digital. Al integrar la plataforma de Microsoft con la experiencia de PI en soluciones de IA, pudimos aprovechar lo mejor de ambos mundos: la robustez y escalabilidad de Azure y la cercanía y agilidad de PI para entender nuestras necesidades de negocio."
+            }
+          ]
+        }
+      ],
       "use": []
     }
   }
