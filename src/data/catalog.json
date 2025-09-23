@@ -106,7 +106,17 @@
               "title": "Rol del equipo de PI",
               "description": "Áreas involucradas: AI Engineering, Backend Developer, Frontend Developer y Cloud Architect. Nuestro aporte: implementar un asistente con IA generativa sobre arquitectura RAG, asegurando precisión en las respuestas y escalabilidad en el tiempo."
             }
-          ]
+          ],
+          "context": "Empresa del sector agroindustrial enfocada en genética de semillas. Necesidad: mejorar la experiencia de los visitantes en su página web, brindando respuestas inmediatas a consultas sobre la empresa y sus productos.",
+          "painPoints": "Los visitantes de la web no encontraban fácilmente la información relevante. El canal de contacto estaba limitado a formularios y correos electrónicos, generando tiempos de respuesta largos. Esto reducía la efectividad del sitio como canal de comunicación y de generación de leads.",
+          "solution": "Implementamos NEOCHAT, un asistente conversacional integrado en la landing page de GDM. Basado en una arquitectura RAG (Retrieval Augmented Generation), el asistente combina información estructurada con modelos de lenguaje para dar respuestas precisas y actualizadas. Enfoque diferencial: diseñamos una solución escalable y de fácil mantenimiento, que permite a GDM ampliar el alcance del asistente con nuevos contenidos y fuentes de información.",
+          "impact": [
+            {
+              "label": "Logro",
+              "description": "Respuestas inmediatas a visitantes, mejorando la experiencia de usuario. Reducción en tiempos de atención (de horas/días a segundos). Potencial aumento en la conversión de leads gracias a un canal de contacto más ágil."
+            }
+          ],
+          "role": "Áreas involucradas: AI Engineering, Backend Developer, Frontend Developer y Cloud Architect. Nuestro aporte: implementar un asistente con IA generativa sobre arquitectura RAG, asegurando precisión en las respuestas y escalabilidad en el tiempo."
         }
       ],
       "use": []
@@ -222,7 +232,17 @@
               "title": "Testimonio del cliente",
               "description": "Llevamos casi cinco años colaborando con PI Consulting, y ese acompañamiento constante nos permitió evolucionar juntos en cada etapa de nuestra transformación digital. Al integrar la plataforma de Microsoft con la experiencia de PI en soluciones de IA, pudimos aprovechar lo mejor de ambos mundos: la robustez y escalabilidad de Azure y la cercanía y agilidad de PI para entender nuestras necesidades de negocio."
             }
-          ]
+          ],
+          "context": "Arcor es una de las principales compañías alimenticias de América Latina, con presencia global en alimentos, golosinas, agroindustria y packaging. Su escala internacional y la complejidad de sus cadenas de suministro la exponen de manera significativa a las fluctuaciones del mercado de commodities.",
+          "painPoints": "En 2023, el fuerte incremento en el precio del cacao llevó al área de Compras de Arcor a buscar una herramienta que les permitiera anticipar eventos globales con impacto en precios. Hasta entonces, la recolección de noticias era manual, dispersa y limitada a pocas fuentes, dificultando la detección temprana de riesgos.",
+          "solution": "PI diseñó una solución basada en tecnologías cloud de Microsoft e inteligencia artificial, con un núcleo de scraping y clasificación de noticias económicas. Desarrollada en Azure Databricks. Scrapers para Yahoo Finance + integración con GDELT. Modelos de IA generativa para clasificación semántica y análisis de sentimiento orientado a finanzas. Distribución de resultados mediante alertas automáticas en Webex y un tablero web en el portal de Compras. El enfoque permitió pasar de un modelo reactivo a uno anticipativo, con alertas diarias sobre eventos críticos.",
+          "impact": [
+            {
+              "label": "Impacto y Resultados",
+              "description": "Anticipación de eventos clave: detección temprana de impactos climáticos, regulatorios y geopolíticos. Optimización del tiempo: reducción significativa del trabajo manual de búsqueda de información. Mejora en la toma de decisiones: acceso diario a información estructurada y contextualizada. Escalabilidad: la arquitectura puede adaptarse a otros commodities (café, trigo, soja, azúcar, oro, petróleo). Impacto estratégico: Compras pasó a operar con visión anticipada, mejorando la gestión de riesgos y eficiencia de costos."
+            }
+          ],
+          "role": "El proyecto fue liderado desde el área de Data Science con un abordaje multirol que integró tareas de Data Engineering y Data Science en conjunto. Esto permitió abarcar el diseño de arquitectura, desarrollo de modelos de IA y despliegue en producción en un mismo flujo de trabajo."
         }
       ],
       "use": []
