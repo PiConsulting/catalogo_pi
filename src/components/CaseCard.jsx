@@ -7,13 +7,25 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
   return (
     <>
       <div
-        className="block bg-white border border-yellow-400 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden cursor-pointer"
+        className="block border border-yellow-400 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden cursor-pointer relative"
         style={{minHeight: '180px'}}
         onClick={() => setShowModal(true)}
       >
-        <div className="flex flex-col h-full justify-between p-4">
+        {/* Imagen de fondo */}
+        <img
+          src={caseItem.images && caseItem.images[0] ? caseItem.images[0] : '/placeholder.svg'}
+          alt={caseItem.name}
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{height: '100%', minHeight: '180px'}}
+        />
+        {/* Overlay oscuro */}
+        <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
+        {/* Contenido */}
+        <div className="flex flex-col h-full justify-between p-4 relative z-20">
           <div className="flex items-center gap-3 mb-2">
-            <h3 className="font-bold text-gray-900 text-base flex-1">{caseItem.name}</h3>
+            <h3 className="font-bold text-white text-base flex-1 drop-shadow-lg">
+              {caseItem.name}
+            </h3>
             <span
               className={`px-2 py-1 rounded-full text-xs font-semibold ${
                 caseItem.type === 'success'
@@ -24,12 +36,12 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
               {caseItem.type === 'success' ? 'Caso de éxito' : 'Caso de uso'}
             </span>
           </div>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+          <p className="text-white text-sm mb-4 line-clamp-2 drop-shadow-lg">
             {caseItem.descriptions && caseItem.descriptions[0]}
           </p>
           <div className="flex justify-end">
             <button
-              className="bg-gray-900 text-white text-xs px-5 py-2 rounded-full font-medium hover:bg-gray-800 transition-all"
+              className="bg-yellow-500 text-white text-xs px-5 py-2 rounded-full font-medium hover:bg-yellow-400 transition-all"
               tabIndex={-1}
               type="button"
               onClick={(e) => {
@@ -116,7 +128,7 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">
                   Impacto logrado <span className="ml-2">🖖</span>
                 </h2>
-                <div className="bg-yellow-200 rounded-lg p-6 flex flex-col md:flex-row gap-6 justify-between items-center">
+                <div className="bg-yellow-200 rounded-xl p-6 flex flex-col md:flex-row gap-6 justify-between items-center">
                   {caseItem.impact?.map((logro, index) => (
                     <div key={index} className="text-center flex-1">
                       <p className="text-gray-700 text-base mb-2">{logro.description}</p>

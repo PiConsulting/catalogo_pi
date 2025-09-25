@@ -4,7 +4,7 @@
     "category": "Minería",
     "content": "Casos de uso y éxito",
     "description": "Soluciones de IA para optimizar procesos en minería.",
-    "icon": "https://picsum.photos/200/300/?blur=10",
+    "icon": "../public/img/mineria.png",
     "url": "/categoria/mineria",
     "tags": ["Optimización", "Producción"],
     "cases": {
@@ -43,7 +43,7 @@
     "category": "Banca",
     "content": "Casos de uso y éxito",
     "description": "IA para la detección de fraude, análisis de riesgo y experiencia del cliente.",
-    "icon": "https://picsum.photos/200/300/?blur=9",
+    "icon": "../public/img/banca.png",
     "url": "/categoria/banca",
     "tags": ["Seguridad", "Clientes"],
     "cases": {
@@ -56,7 +56,7 @@
     "category": "Ciencia",
     "content": "Casos de uso y éxito",
     "description": "IA aplicada a la investigación, análisis y visualización de datos científicos.",
-    "icon": "https://picsum.photos/200/300",
+    "icon": "../public/img/ciencia.png",
     "url": "/categoria/ciencia",
     "tags": ["Datos", "Investigación"],
     "cases": {
@@ -69,7 +69,7 @@
     "category": "Agro",
     "content": "Casos de uso y éxito",
     "description": "Optimización de cultivos, predicción de cosechas y gestión agrícola con IA.",
-    "icon": "https://picsum.photos/200/300/?blur=5",
+    "icon": "../public/img/agro.png",
     "url": "/categoria/agro",
     "tags": ["Producción", "Gestión"],
     "cases": {
@@ -82,7 +82,7 @@
         },
         {
           "name": "GDM -> NEOCHAT",
-          "images": [],
+          "images": ["../public/img/Casoexito/gdm.png"],
           "descriptions": ["Caso de éxito en agro: GDM - NEOCHAT."],
           "logos": [],
           "info": [
@@ -127,7 +127,7 @@
     "category": "Energía",
     "content": "Casos de uso y éxito",
     "description": "Soluciones inteligentes para gestión y eficiencia energética.",
-    "icon": "https://picsum.photos/200/300/?blur=4",
+    "icon": "../public/img/energia.png",
     "url": "/categoria/energia",
     "tags": ["Sostenibilidad", "Producción"],
     "cases": {
@@ -139,7 +139,7 @@
     "category": "Instituciones gubernamentales",
     "content": "Casos de uso y éxito",
     "description": "Transformación digital y servicios ciudadanos con IA.",
-    "icon": "https://picsum.photos/id/870/200/300?grayscale&blur=2",
+    "icon": "../public/img/institutoGubernamental.png",
     "url": "/categoria/gobierno",
     "tags": ["Gobierno", "Ciudadanía", "Digitalización"],
     "cases": {
@@ -177,16 +177,25 @@
     "category": "Oil & Gas",
     "content": "Casos de uso y éxito",
     "description": "Monitoreo, seguridad y optimización en la industria de Oil & Gas.",
-    "icon": "https://picsum.photos/200/300/?blur=2",
+    "icon": "../public/img/OilGas.png",
     "url": "/categoria/oilgas",
     "tags": ["Producción", "Seguridad"],
     "cases": {
       "success": [
         {
           "name": "YPF -> PYWO (Oil & Gas)",
-          "images": [],
+          "images": ["../public/img/Casoexito/ypf.png"],
           "descriptions": ["Caso de éxito en oil & gas: YPF - PYWO."],
-          "logos": []
+          "logos": [],
+          "context": "El cliente fue YPF, dentro de la industria petrolera, específicamente el área de Perforaciones y Work Over, origen del nombre de la iniciativa PyWO. Las principales necesidades planteadas se centraron en la optimización del proceso de carga de tickets de soporte y en la disponibilización ágil de información operativa",
+          "painPoints": "Las problemáticas detectadas correspondían a las necesidades mencionadas. En primer lugar, la carga de tickets demandaba un tiempo operativo considerable y generaba inconsistencias en el registro de incidentes. Adicionalmente, los responsables y la gerencia requerían acceder a procedimientos y datos operativos que se encontraban dispersos en múltiples documentos y bases de datos, lo que implicaba realizar búsquedas manuales que retrasaban la toma de decisiones.",
+          "solution": "Para abordar estos desafíos, se implementó un asistente conversacional con inteligencia artificial, que permite a los operarios registrar tickets de soporte de forma ágil mediante voz o texto. La solución garantiza la captura completa de información con mínima intervención manual.Asimismo, se desarrollaron módulos de interacción con documentos y bases de datos, facilitando que responsables y gerencias consulten información operativa y procedimientos en lenguaje natural, de manera rápida y sencilla. Esto redujo los tiempos de búsqueda y mejoró la disponibilidad de información clave para la operación diaria.",
+          "impact": [
+            {
+              "description": "El asistente PyWO permite a los operarios de YPF registrar tickets de soporte de forma más rápida y sencilla, reduciendo significativamente el tiempo invertido y minimizando errores de carga manual. A su vez, responsables y gerencias acceden a información operativa y procedimientos sin necesidad de realizar búsquedas manuales en múltiples fuentes, lo que acelera la toma de decisiones y mejora la eficiencia de las operaciones de perforación y work over. La solución incrementa la trazabilidad de solicitudes e incidentes, posibilitando un mejor seguimiento de los mismos. Además, al automatizar los procesos de carga y consulta, libera tiempo operativo del personal, contribuyendo a una operación más ágil y eficiente."
+            }
+          ],
+          "role": "El proyecto fue liderado por el área de Inteligencia Artificial de PI, destacándose el compromiso del equipo en la evaluación de distintas tecnologías para determinar la más adecuada al caso, así como en la implementación efectiva de la solución."
         }
       ],
       "use": []
@@ -197,14 +206,14 @@
     "category": "Retail",
     "content": "Casos de uso y éxito",
     "description": "IA para mejorar la experiencia del cliente y optimizar ventas.",
-    "icon": "https://picsum.photos/200/300/?blur=3",
+    "icon": "../public/img/retail.png",
     "url": "/categoria/retail",
     "tags": ["Ventas", "Clientes"],
     "cases": {
       "success": [
         {
           "name": "ARCOR -> Scraping de Noticias",
-          "images": [],
+          "images": ["../public/img/Casoexito/arcor.png"],
           "descriptions": ["Caso de éxito en retail: ARCOR - Scraping de Noticias."],
           "logos": [],
           "info": [

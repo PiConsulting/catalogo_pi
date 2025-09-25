@@ -24,8 +24,12 @@ const Category = () => {
   }
 
   const allCases = [
-    ...category.cases.success.map((c, idx) => ({...c, type: 'success', realIndex: idx})),
-    ...category.cases.use.map((c, idx) => ({...c, type: 'use', realIndex: idx})),
+    ...(Array.isArray(category.cases?.success)
+      ? category.cases.success.map((c, idx) => ({...c, type: 'success', realIndex: idx}))
+      : []),
+    ...(Array.isArray(category.cases?.use)
+      ? category.cases.use.map((c, idx) => ({...c, type: 'use', realIndex: idx}))
+      : []),
   ]
 
   return (
