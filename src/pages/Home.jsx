@@ -39,9 +39,9 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{backgroundColor: 'rgb(243, 243, 233, 0.3)'}}>
+      {' '}
       <Header />
-
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Catálogo de Soluciones de IA</h1>

@@ -43,7 +43,7 @@ const CaseDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen relative" style={{backgroundColor: 'rgb(243, 243, 233, 0.30)'}}>
       <Header />
 
       {/* Imagen de fondo y overlay oscuro, igual que Category.jsx */}

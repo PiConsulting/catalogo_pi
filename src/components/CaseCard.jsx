@@ -70,6 +70,8 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
               ×
             </button>
 
+            {/* Imagen de arquitectura opcional arriba de todo */}
+
             {/* Imagen de fondo, badge y título */}
             <div className="relative w-full h-[180px] md:h-[220px] flex items-center justify-center mb-8 rounded-t-xl overflow-hidden">
               <img
@@ -99,6 +101,133 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
 
             {/* Secciones dinámicas */}
             <section className="max-w-3xl mx-auto px-8 pb-8">
+              <div className="w-full flex flex-col justify-center items-center pb-8">
+                <div
+                  className="flex justify-center items-end gap-8 mt-8 w-full"
+                  style={{maxWidth: '700px'}}
+                >
+                  {/* Círculo 1 - rojo */}
+                  <div
+                    className="relative flex flex-col items-center"
+                    style={{width: '108px', height: '160px'}}
+                  >
+                    <div
+                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                      style={{position: 'absolute', top: '20px', left: '20px'}}
+                    >
+                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                        Sobrecarga de correos legales y gestión manual ineficiente.
+                      </span>
+                    </div>
+                    {/* Semicírculo inferior rojo */}
+                    <svg
+                      width="160"
+                      height="80"
+                      viewBox="0 0 160 80"
+                      className="absolute bottom-0 left-0 z-0"
+                    >
+                      <path
+                        d="M10,0 A70,70 0 0,0 150,0"
+                        stroke="#F75C5C"
+                        strokeWidth="8"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  {/* Círculo 2 - amarillo */}
+                  <div
+                    className="relative flex flex-col items-center"
+                    style={{width: '108px', height: '160px'}}
+                  >
+                    <div
+                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                      style={{position: 'absolute', top: '20px', left: '20px'}}
+                    >
+                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                        Automatización con IA y NLP en Azure.
+                      </span>
+                    </div>
+                    {/* Semicírculo superior amarillo */}
+                    <svg
+                      width="160"
+                      height="80"
+                      viewBox="0 0 160 80"
+                      className="absolute top-0 left-0 z-0"
+                    >
+                      <path
+                        d="M10,80 A70,70 0 0,1 150,80"
+                        stroke="#FFD600"
+                        strokeWidth="8"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  {/* Círculo 3 - verde */}
+                  <div
+                    className="relative flex flex-col items-center"
+                    style={{width: '108px', height: '160px'}}
+                  >
+                    <div
+                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                      style={{position: 'absolute', top: '20px', left: '20px'}}
+                    >
+                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                        Integración con Outlook y servicios Azure escalables.{' '}
+                      </span>
+                    </div>
+                    {/* Semicírculo inferior verde */}
+                    <svg
+                      width="160"
+                      height="80"
+                      viewBox="0 0 160 80"
+                      className="absolute bottom-0 left-0 z-0"
+                    >
+                      <path
+                        d="M10,0 A70,70 0 0,0 150,0"
+                        stroke="#5CCF7F"
+                        strokeWidth="8"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  {/* Círculo 4 - azul */}
+                  <div
+                    className="relative flex flex-col items-center"
+                    style={{width: '160px', height: '160px'}}
+                  >
+                    <div
+                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                      style={{position: 'absolute', top: '20px', left: '20px'}}
+                    >
+                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                      <span
+                        className="text-gray-600 text-xs text-center"
+                        style={{fontSize: '10px'}}
+                      >
+                        70% menos tiempo y mayor eficiencia legal.{' '}
+                      </span>
+                    </div>
+                    {/* Semicírculo superior azul */}
+                    <svg
+                      width="160"
+                      height="80"
+                      viewBox="0 0 160 80"
+                      className="absolute top-0 left-0 z-0"
+                    >
+                      <path
+                        d="M10,80 A70,70 0 0,1 150,80"
+                        stroke="#4A90E2"
+                        strokeWidth="8"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
               {/* Contexto */}
               <div className="mb-6">
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">
@@ -106,7 +235,6 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                 </h2>
                 <p className="text-gray-700 text-base">{caseItem.context}</p>
               </div>
-
               {/* Puntos de dolor + Solución */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
                 <div>
@@ -122,7 +250,6 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                   <p className="text-gray-700 text-base">{caseItem.solution}</p>
                 </div>
               </div>
-
               {/* Impacto logrado */}
               <div className="mb-6">
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">
@@ -137,7 +264,6 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                   ))}
                 </div>
               </div>
-
               {/* Rol del equipo */}
               <div className="mb-6">
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">
@@ -145,6 +271,16 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                 </h2>
                 <p className="text-gray-700 text-base">{caseItem.role}</p>
               </div>
+              {caseItem.architectureimg && caseItem.architectureimg !== '' && (
+                <div className="w-full flex flex-col justify-center items-center pb-8">
+                  <img
+                    src={caseItem.architectureimg}
+                    alt="Arquitectura"
+                    className="object-contain rounded-xl shadow-md mx-auto"
+                    style={{background: 'white', maxWidth: '700px', width: '100%', height: 'auto'}}
+                  />
+                </div>
+              )}
             </section>
           </div>
         </div>

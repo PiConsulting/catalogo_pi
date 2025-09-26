@@ -5,7 +5,7 @@ const CategoryCard = ({category, className = ''}) => {
     <Link
       to={category.url}
       className={`relative block rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 bg-black/70 ${className}`}
-      style={{minHeight: '140px'}}
+      style={{minHeight: '200px'}}
     >
       {/* Imagen de fondo */}
       <img

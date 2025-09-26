@@ -4,38 +4,12 @@
     "category": "Minería",
     "content": "Casos de uso y éxito",
     "description": "Soluciones de IA para optimizar procesos en minería.",
-    "icon": "../public/img/mineria.png",
+    "icon": "/img/mineria.png",
     "url": "/categoria/mineria",
     "tags": ["Optimización", "Producción"],
     "cases": {
-      "success": [
-        {
-          "name": "Proyecto Mina Inteligente",
-          "images": ["https://picsum.photos/200/300"],
-          "descriptions": ["Implementación de sensores inteligentes para control de extracción."],
-          "logos": ["https://picsum.photos/200/300"]
-        },
-        {
-          "name": "SITRANS -> Caso de facturas (Logística)",
-          "images": [],
-          "descriptions": ["Caso de éxito en logística: SITRANS - Caso de facturas."],
-          "logos": []
-        },
-        {
-          "name": "TENARIS -> Asistente en planta (Industria)",
-          "images": [],
-          "descriptions": ["Caso de éxito en industria: TENARIS - Asistente en planta."],
-          "logos": []
-        }
-      ],
-      "use": [
-        {
-          "name": "Monitoreo de maquinaria",
-          "images": ["https://picsum.photos/200/300"],
-          "descriptions": ["Seguimiento en tiempo real del estado de las máquinas."],
-          "logos": []
-        }
-      ]
+      "success": [],
+      "use": []
     }
   },
   {
@@ -43,11 +17,30 @@
     "category": "Banca",
     "content": "Casos de uso y éxito",
     "description": "IA para la detección de fraude, análisis de riesgo y experiencia del cliente.",
-    "icon": "../public/img/banca.png",
+    "icon": "/img/banca.png",
     "url": "/categoria/banca",
     "tags": ["Seguridad", "Clientes"],
     "cases": {
-      "success": [],
+      "success": [
+        {
+          "name": "Banco Agrario de Colombia -> Inboxia",
+          "images": ["/img/Casoexito/alcaldiaBogota.png"],
+          "descriptions": [
+            "Automatizamos con IA la gestión del buzón jurídico del Banco Agrario, reduciendo en 70% los tiempos de procesamiento y mejorando cumplimiento y eficiencia legal."
+          ],
+          "logos": [],
+          "context": "El Banco Agrario de Colombia, entidad estatal con presencia en zonas rurales y foco en inclusión financiera, enfrentaba una alta carga operativa en su área jurídica, recibiendo cientos de correos diarios con notificaciones judiciales y regulatorias.",
+          "painPoints": "La gestión manual de estos correos generaba demoras, errores y riesgo de pérdida de información crítica, afectando la capacidad de respuesta legal y aumentando la carga del equipo.",
+          "solution": "Se implementó una solución integral en Microsoft Azure que combina Logic Apps, Azure OpenAI, Document Intelligence y Cosmos DB para automatizar la clasificación y redirección de correos legales. El sistema procesa en tiempo real, analiza adjuntos, garantiza trazabilidad y permite actualizar categorías sin modificar la lógica central.",
+          "impact": [
+            {
+              "description": "La automatización redujo en 70 % el tiempo de procesamiento del buzón jurídico, disminuyó errores, fortaleció el cumplimiento regulatorio y liberó al equipo legal para enfocarse en tareas estratégicas. Además, posicionó al Banco Agrario como pionero en el sector financiero público en el uso de IA y automatización inteligente."
+            }
+          ],
+          "role": "Desde PI Consulting, se diseñó e implementó la solución de forma modular y escalable, asegurando integración con el ecosistema del cliente, transferencia de conocimiento y acompañamiento estratégico. Esto permitió una adopción rápida, beneficios inmediatos y la apertura de nuevas oportunidades para replicar la solución en otros procesos y sectores.",
+          "architectureimg": "/img/Casoexito/inboxiaArquitectura.png"
+        }
+      ],
       "use": []
     }
   },
@@ -56,7 +49,7 @@
     "category": "Ciencia",
     "content": "Casos de uso y éxito",
     "description": "IA aplicada a la investigación, análisis y visualización de datos científicos.",
-    "icon": "../public/img/ciencia.png",
+    "icon": "/img/ciencia.png",
     "url": "/categoria/ciencia",
     "tags": ["Datos", "Investigación"],
     "cases": {
@@ -69,20 +62,31 @@
     "category": "Agro",
     "content": "Casos de uso y éxito",
     "description": "Optimización de cultivos, predicción de cosechas y gestión agrícola con IA.",
-    "icon": "../public/img/agro.png",
+    "icon": "/img/agro.png",
     "url": "/categoria/agro",
     "tags": ["Producción", "Gestión"],
     "cases": {
       "success": [
         {
           "name": "CHIMU -> Predicción de pesos de pollos",
-          "images": [],
+          "images": ["/img/Casoexito/chimu.png"],
           "descriptions": ["Caso de éxito en agro: CHIMU - Predicción de pesos de pollos."],
-          "logos": []
+          "logos": [],
+          "info": [],
+          "context": "Chimu es una empresa avícola peruana con planteles en Olmos y Guadalupito dedicada a la producción de pollos de engorde. Su desafío principal era identificar con exactitud el momento en el que cada ave alcanzaba su peso ideal de comercialización. Debido a la influencia de múltiples factores —sexo, edad, tipos de alimento, consumo, mortalidad y condiciones ambientales—, la compañía necesitaba una herramienta que le permitiera tomar decisiones basadas en datos y no únicamente en experiencia previa.",
+          "painPoints": "Antes del proyecto, las decisiones se tomaban de manera empírica, lo que generaba una alta variabilidad entre campañas y entre sexos de aves. Esto derivaba en ineficiencias en el uso de los recursos alimentarios, pérdidas económicas por vender fuera del momento óptimo, y retrasos en la instalación de nuevas campañas. La falta de precisión impactaba directamente en la rentabilidad y en la planificación logística.",
+          "solution": "Se implementó un modelo analítico predictivo sobre la plataforma Microsoft Azure, con una arquitectura escalable y automatizada. A través de Databricks se realizó la limpieza y el análisis exploratorio de los datos, se aplicaron técnicas de feature engineering y se organizaron las capas Bronze y Gold para estructurar la información. Se entrenaron modelos de machine learning ensamblados (XGBoost y LightGBM) diferenciados por sexo, y se gestionó su ciclo de vida con MLFlow, incluyendo versionado, experimentos y monitoreo continuo. Además, se exportaron los modelos en formato .pkl, se desarrollaron APIs para su consumo y se habilitaron visualizaciones ejecutivas en Power BI y Microsoft Fabric, garantizando información accesible para la toma de decisiones estratégicas.",
+          "impact": [
+            {
+              "label": "",
+              "description": "La solución alcanzó una precisión del 97% (R²), con márgenes de error del 9% para machos y 8% para hembras. Esto permitió predecir con exactitud el día en que las aves alcanzan su peso óptimo, transformando las decisiones empíricas en estrategias basadas en datos. Se lograron mejoras en eficiencia alimentaria, reducción de desperdicios y de huella de carbono, mayor rentabilidad y una optimización de la logística de comercialización. La arquitectura desarrollada permite reentrenamiento programado, monitoreo automático y es replicable en otros planteles o condiciones de mercado, garantizando sostenibilidad a largo plazo."
+            }
+          ],
+          "role": "El equipo trabajó en conjunto con Chimu desde la definición del proceso de negocio y la identificación de variables críticas hasta la implementación de la arquitectura en Azure. Se desarrollaron notebooks en Databricks para análisis y modelado, se aplicó MLFlow para versionado y seguimiento de modelos, y se instrumentaron jobs automatizados para entrenamientos y monitoreo. También se entregaron dashboards en Power BI y artefactos técnicos integrables en los procesos operativos. Finalmente, se acompañó al cliente en la puesta en producción, el diseño de APIs, la capacitación y la generación de reportes ejecutivos que consolidaron la transformación hacia un modelo de gestión basado en datos."
         },
         {
           "name": "GDM -> NEOCHAT",
-          "images": ["../public/img/Casoexito/gdm.png"],
+          "images": ["/img/Casoexito/gdm.png"],
           "descriptions": ["Caso de éxito en agro: GDM - NEOCHAT."],
           "logos": [],
           "info": [
@@ -112,7 +116,7 @@
           "solution": "Implementamos NEOCHAT, un asistente conversacional integrado en la landing page de GDM. Basado en una arquitectura RAG (Retrieval Augmented Generation), el asistente combina información estructurada con modelos de lenguaje para dar respuestas precisas y actualizadas. Enfoque diferencial: diseñamos una solución escalable y de fácil mantenimiento, que permite a GDM ampliar el alcance del asistente con nuevos contenidos y fuentes de información.",
           "impact": [
             {
-              "label": "Logro",
+              "label": "",
               "description": "Respuestas inmediatas a visitantes, mejorando la experiencia de usuario. Reducción en tiempos de atención (de horas/días a segundos). Potencial aumento en la conversión de leads gracias a un canal de contacto más ágil."
             }
           ],
@@ -127,7 +131,7 @@
     "category": "Energía",
     "content": "Casos de uso y éxito",
     "description": "Soluciones inteligentes para gestión y eficiencia energética.",
-    "icon": "../public/img/energia.png",
+    "icon": "/img/energia.png",
     "url": "/categoria/energia",
     "tags": ["Sostenibilidad", "Producción"],
     "cases": {
@@ -139,34 +143,44 @@
     "category": "Instituciones gubernamentales",
     "content": "Casos de uso y éxito",
     "description": "Transformación digital y servicios ciudadanos con IA.",
-    "icon": "../public/img/institutoGubernamental.png",
+    "icon": "/img/institutoGubernamental.png",
     "url": "/categoria/gobierno",
     "tags": ["Gobierno", "Ciudadanía", "Digitalización"],
     "cases": {
       "success": [
         {
           "name": "CABA -> Asistente Virtual BOTI (Instituciones gubernamentales)",
-          "images": [],
+          "images": ["/img/Casoexito/boti.png"],
           "descriptions": [
             "Caso de éxito en instituciones gubernamentales: CABA - Asistente Virtual BOTI."
           ],
-          "logos": []
+          "logos": [],
+          "context": "El Gobierno de la Ciudad de Buenos Aires buscaba dar un nuevo salto en innovación digital con el objetivo de brindar a ciudadanos y visitantes una experiencia única: poder consultar de manera natural y conversacional sobre planes turísticos, culturales y de entretenimiento, accediendo a información actualizada, confiable y accesible en todo momento.",
+          "painPoints": "El desafío principal era desarrollar una funcionalidad que no solo brindara información, sino que recomendara actividades personalizadas en función de los intereses del usuario. Con los mecanismos tradicionales de búsqueda y FAQ no era posible interpretar matices, preferencias ni la intención real detrás de cada consulta. La falta de interpretación semántica limitaba la fluidez de la experiencia y dificultaba ofrecer respuestas verdaderamente relevantes y humanas.",
+          "solution": "Desde PI Consulting, a través de la Línea de Negocio de Inteligencia Artificial, se desarrolló e integró una nueva capacidad en BOTI, el asistente virtual del Gobierno porteño. Esta innovación se convirtió en el primer caso público de aplicación de IA generativa dentro del ecosistema de BOTI, permitiendo generar itinerarios de visitas y recomendaciones de eventos personalizadas de manera natural. Un aspecto clave fue el momento de implementación, ya que el proyecto se lanzó en los primeros meses del boom global de la GenAI utilizando inicialmente el modelo GPT-3.5. Esto posicionó al Gobierno de la Ciudad como pionero en la región en el uso de esta tecnología disruptiva aplicada a la experiencia ciudadana.",
+          "impact": [
+            {
+              "description": "La incorporación de IA generativa en BOTI marcó un hito en la manera en que los vecinos y turistas se relacionan con los servicios digitales de la Ciudad. Los usuarios pudieron acceder a recomendaciones más humanas, ágiles y precisas, mientras que el Gobierno validó, a través de este piloto, el potencial de la IA como punto de partida para una agenda más amplia de innovación digital. El proyecto se convirtió en un referente pionero en América Latina, mostrando cómo la inteligencia artificial puede acercar a los gobiernos a sus ciudadanos de forma más efectiva y personalizada. Aunque no se publicaron métricas oficiales en esta etapa inicial, el impacto fue evidente en el interés por replicar la experiencia en otros servicios y en la apertura a nuevas iniciativas basadas en IA generativa."
+            }
+          ],
+          "role": "El equipo de PI Consulting se encargó de la ejecución integral de la solución, desde la definición técnica hasta el soporte en producción, trabajando estrechamente con el cliente y con el socio estratégico Microsoft. Fue la cara visible en el desarrollo y la implementación, asegurando que la tecnología se adaptara tanto al contexto como al objetivo final. El foco estuvo puesto en mejorar la experiencia de los ciudadanos y en abrir el camino hacia un futuro de servicios digitales potenciados por inteligencia artificial generativa."
         },
         {
-          "name": "SUBSECRETARIA DE MEDIO AMBIENTE CHILE -> Inboxia como servicio (Instituciones gubernamentales)",
-          "images": [],
+          "name": "Alcaldía Bogota",
+          "images": ["/img/Casoexito/alcaldiaBogota.png"],
           "descriptions": [
-            "Caso de éxito en instituciones gubernamentales: SUBSECRETARIA DE MEDIO AMBIENTE CHILE - Inboxia como servicio."
+            "Automatizamos con IA la clasificación de solicitudes ciudadanas en Bogotá, logrando 94% de precisión y mejorando la atención a miles de personas."
           ],
-          "logos": []
-        },
-        {
-          "name": "ALCALDIA DE BOGOTA -> Inboxia como servicio (Instituciones gubernamentales)",
-          "images": [],
-          "descriptions": [
-            "Caso de éxito en instituciones gubernamentales: ALCALDIA DE BOGOTA - Inboxia como servicio."
+          "logos": [],
+          "context": "La Alcaldía de Bogotá recibe más de 40.000 solicitudes ciudadanas mensuales a través de “Bogotá Te Escucha”. Estas PQRS (Peticiones, Quejas, Reclamos y Sugerencias) deben ser clasificadas y enviadas a 63 entidades diferentes para su gestión. El proceso era manual, costoso, con alto riesgo de error y generaba una gran sobrecarga operativa.",
+          "painPoints": "El sistema manual ralentizaba la atención ciudadana, aumentaba los tiempos de respuesta y requería una gran cantidad de recursos humanos. Además, la clasificación poco precisa afectaba la calidad del servicio, generaba frustración en los ciudadanos y limitaba la capacidad de escalar el sistema a más áreas de gobierno.",
+          "solution": "Pi Consulting desarrolló e implementó una solución basada 100% en Microsoft Azure, utilizando IA generativa y un sistema multiagente. La arquitectura incluye Azure Functions, Logic Apps, Cosmos DB, Azure Storage, Document Intelligence y Azure OpenAI. La solución automatiza la clasificación de solicitudes con una precisión del 94%, determina si una petición puede resolverse automáticamente o requiere intervención humana, y permite escalar el modelo a las 63 entidades del distrito. Además, incorpora métricas de calidad como “consistencia” y “fundamentación” para asegurar transparencia y trazabilidad.",
+          "impact": [
+            {
+              "description": "Se logró transformar un proceso crítico y manual en un sistema inteligente, reduciendo los tiempos de atención ciudadana y los errores humanos, mejorando la experiencia de más de 400.000 ciudadanos mensuales. La Alcaldía redujo la carga operativa, optimizó recursos, fortaleció su estrategia de Gobierno Digital y modernizó la gestión pública. El diseño modular y escalable permite replicar la solución en otras ciudades o instituciones, posicionando este caso como un modelo regional de innovación pública con IA."
+            }
           ],
-          "logos": []
+          "role": "El equipo de Pi Consulting lideró el diseño, desarrollo e implementación de la arquitectura tecnológica, asegurando integración con los sistemas existentes de la Alcaldía. Se trabajó de manera conjunta con equipos funcionales y sociales de la Alcaldía para garantizar la sensibilidad ciudadana y la validación de los procesos. También se realizó transferencia de conocimiento y capacitación, asegurando que la solución sea sostenible, autónoma y adaptable a futuro."
         }
       ],
       "use": []
@@ -177,14 +191,14 @@
     "category": "Oil & Gas",
     "content": "Casos de uso y éxito",
     "description": "Monitoreo, seguridad y optimización en la industria de Oil & Gas.",
-    "icon": "../public/img/OilGas.png",
+    "icon": "/img/OilGas.png",
     "url": "/categoria/oilgas",
     "tags": ["Producción", "Seguridad"],
     "cases": {
       "success": [
         {
           "name": "YPF -> PYWO (Oil & Gas)",
-          "images": ["../public/img/Casoexito/ypf.png"],
+          "images": ["/img/Casoexito/ypf.png"],
           "descriptions": ["Caso de éxito en oil & gas: YPF - PYWO."],
           "logos": [],
           "context": "El cliente fue YPF, dentro de la industria petrolera, específicamente el área de Perforaciones y Work Over, origen del nombre de la iniciativa PyWO. Las principales necesidades planteadas se centraron en la optimización del proceso de carga de tickets de soporte y en la disponibilización ágil de información operativa",
@@ -206,14 +220,14 @@
     "category": "Retail",
     "content": "Casos de uso y éxito",
     "description": "IA para mejorar la experiencia del cliente y optimizar ventas.",
-    "icon": "../public/img/retail.png",
+    "icon": "/img/retail.png",
     "url": "/categoria/retail",
     "tags": ["Ventas", "Clientes"],
     "cases": {
       "success": [
         {
           "name": "ARCOR -> Scraping de Noticias",
-          "images": ["../public/img/Casoexito/arcor.png"],
+          "images": ["/img/Casoexito/arcor.png"],
           "descriptions": ["Caso de éxito en retail: ARCOR - Scraping de Noticias."],
           "logos": [],
           "info": [

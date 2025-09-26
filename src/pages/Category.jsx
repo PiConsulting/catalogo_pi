@@ -33,7 +33,7 @@ const Category = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen relative" style={{backgroundColor: 'rgb(243, 243, 233, 0.30)'}}>
       <Header />
 
       {/* Header visual de la categoría */}
