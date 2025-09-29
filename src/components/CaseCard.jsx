@@ -101,133 +101,134 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
 
             {/* Secciones dinámicas */}
             <section className="max-w-3xl mx-auto px-8 pb-8">
-              <div className="w-full flex flex-col justify-center items-center pb-8">
-                <div
-                  className="flex justify-center items-end gap-8 mt-8 w-full"
-                  style={{maxWidth: '700px'}}
-                >
-                  {/* Círculo 1 - rojo */}
+              {caseItem.process && caseItem.process.length === 4 && (
+                <div className="w-full flex flex-col justify-center items-center pb-8">
                   <div
-                    className="relative flex flex-col items-center"
-                    style={{width: '108px', height: '160px'}}
+                    className="flex justify-center items-end gap-8 mt-8 w-full"
+                    style={{maxWidth: '700px'}}
                   >
+                    {/* Círculo 1 - rojo */}
                     <div
-                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
-                      style={{position: 'absolute', top: '20px', left: '20px'}}
+                      className="relative flex flex-col items-center"
+                      style={{width: '108px', height: '160px'}}
                     >
-                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
-                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
-                        Sobrecarga de correos legales y gestión manual ineficiente.
-                      </span>
-                    </div>
-                    {/* Semicírculo inferior rojo */}
-                    <svg
-                      width="160"
-                      height="80"
-                      viewBox="0 0 160 80"
-                      className="absolute bottom-0 left-0 z-0"
-                    >
-                      <path
-                        d="M10,0 A70,70 0 0,0 150,0"
-                        stroke="#F75C5C"
-                        strokeWidth="8"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Círculo 2 - amarillo */}
-                  <div
-                    className="relative flex flex-col items-center"
-                    style={{width: '108px', height: '160px'}}
-                  >
-                    <div
-                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
-                      style={{position: 'absolute', top: '20px', left: '20px'}}
-                    >
-                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
-                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
-                        Automatización con IA y NLP en Azure.
-                      </span>
-                    </div>
-                    {/* Semicírculo superior amarillo */}
-                    <svg
-                      width="160"
-                      height="80"
-                      viewBox="0 0 160 80"
-                      className="absolute top-0 left-0 z-0"
-                    >
-                      <path
-                        d="M10,80 A70,70 0 0,1 150,80"
-                        stroke="#FFD600"
-                        strokeWidth="8"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Círculo 3 - verde */}
-                  <div
-                    className="relative flex flex-col items-center"
-                    style={{width: '108px', height: '160px'}}
-                  >
-                    <div
-                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
-                      style={{position: 'absolute', top: '20px', left: '20px'}}
-                    >
-                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
-                      <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
-                        Integración con Outlook y servicios Azure escalables.{' '}
-                      </span>
-                    </div>
-                    {/* Semicírculo inferior verde */}
-                    <svg
-                      width="160"
-                      height="80"
-                      viewBox="0 0 160 80"
-                      className="absolute bottom-0 left-0 z-0"
-                    >
-                      <path
-                        d="M10,0 A70,70 0 0,0 150,0"
-                        stroke="#5CCF7F"
-                        strokeWidth="8"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Círculo 4 - azul */}
-                  <div
-                    className="relative flex flex-col items-center"
-                    style={{width: '160px', height: '160px'}}
-                  >
-                    <div
-                      className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
-                      style={{position: 'absolute', top: '20px', left: '20px'}}
-                    >
-                      <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
-                      <span
-                        className="text-gray-600 text-xs text-center"
-                        style={{fontSize: '10px'}}
+                      <div
+                        className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                        style={{position: 'absolute', top: '20px', left: '20px'}}
                       >
-                        70% menos tiempo y mayor eficiencia legal.{' '}
-                      </span>
+                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                          {caseItem.process[0].description}
+                        </span>
+                      </div>
+                      {/* Semicírculo inferior rojo */}
+                      <svg
+                        width="160"
+                        height="80"
+                        viewBox="0 0 160 80"
+                        className="absolute bottom-0 left-0 z-0"
+                      >
+                        <path
+                          d="M10,0 A70,70 0 0,0 150,0"
+                          stroke="#F75C5C"
+                          strokeWidth="8"
+                          fill="none"
+                        />
+                      </svg>
                     </div>
-                    {/* Semicírculo superior azul */}
-                    <svg
-                      width="160"
-                      height="80"
-                      viewBox="0 0 160 80"
-                      className="absolute top-0 left-0 z-0"
+                    {/* Círculo 2 - amarillo */}
+                    <div
+                      className="relative flex flex-col items-center"
+                      style={{width: '108px', height: '160px'}}
                     >
-                      <path
-                        d="M10,80 A70,70 0 0,1 150,80"
-                        stroke="#4A90E2"
-                        strokeWidth="8"
-                        fill="none"
-                      />
-                    </svg>
+                      <div
+                        className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                        style={{position: 'absolute', top: '20px', left: '20px'}}
+                      >
+                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                          {caseItem.process[1].description}
+                        </span>
+                      </div>
+                      {/* Semicírculo superior amarillo */}
+                      <svg
+                        width="160"
+                        height="80"
+                        viewBox="0 0 160 80"
+                        className="absolute top-0 left-0 z-0"
+                      >
+                        <path
+                          d="M10,80 A70,70 0 0,1 150,80"
+                          stroke="#FFD600"
+                          strokeWidth="8"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                    {/* Círculo 3 - verde */}
+                    <div
+                      className="relative flex flex-col items-center"
+                      style={{width: '108px', height: '160px'}}
+                    >
+                      <div
+                        className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                        style={{position: 'absolute', top: '20px', left: '20px'}}
+                      >
+                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
+                          {caseItem.process[2].description}
+                        </span>
+                      </div>
+                      {/* Semicírculo inferior verde */}
+                      <svg
+                        width="160"
+                        height="80"
+                        viewBox="0 0 160 80"
+                        className="absolute bottom-0 left-0 z-0"
+                      >
+                        <path
+                          d="M10,0 A70,70 0 0,0 150,0"
+                          stroke="#5CCF7F"
+                          strokeWidth="8"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                    {/* Círculo 4 - azul */}
+                    <div
+                      className="relative flex flex-col items-center"
+                      style={{width: '160px', height: '160px'}}
+                    >
+                      <div
+                        className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
+                        style={{position: 'absolute', top: '20px', left: '20px'}}
+                      >
+                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span
+                          className="text-gray-600 text-xs text-center"
+                          style={{fontSize: '10px'}}
+                        >
+                          {caseItem.process[3].description}
+                        </span>
+                      </div>
+                      {/* Semicírculo superior azul */}
+                      <svg
+                        width="160"
+                        height="80"
+                        viewBox="0 0 160 80"
+                        className="absolute top-0 left-0 z-0"
+                      >
+                        <path
+                          d="M10,80 A70,70 0 0,1 150,80"
+                          stroke="#4A90E2"
+                          strokeWidth="8"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
-              </div>
-
+              )}
               {/* Contexto */}
               <div className="mb-6">
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">

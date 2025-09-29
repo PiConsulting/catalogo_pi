@@ -28,6 +28,20 @@
           "descriptions": [
             "Automatizamos con IA la gestión del buzón jurídico del Banco Agrario, reduciendo en 70% los tiempos de procesamiento y mejorando cumplimiento y eficiencia legal."
           ],
+          "process": [
+            {
+              "description": "Sobrecarga de correos legales y gestión manual ineficiente."
+            },
+            {
+              "description": "Automatización con IA y NLP en Azure."
+            },
+            {
+              "description": "Integración con Outlook y servicios Azure escalables."
+            },
+            {
+              "description": "70% menos tiempo y mayor eficiencia legal."
+            }
+          ],
           "logos": [],
           "context": "El Banco Agrario de Colombia, entidad estatal con presencia en zonas rurales y foco en inclusión financiera, enfrentaba una alta carga operativa en su área jurídica, recibiendo cientos de correos diarios con notificaciones judiciales y regulatorias.",
           "painPoints": "La gestión manual de estos correos generaba demoras, errores y riesgo de pérdida de información crítica, afectando la capacidad de respuesta legal y aumentando la carga del equipo.",
