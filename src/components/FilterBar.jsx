@@ -2,7 +2,7 @@
 
 const FilterBar = ({tags, selectedTags, onTagClick, onClearFilters}) => {
   return (
-    <div className="bg-yellow-200 rounded-full px-1 py-1 flex flex-wrap items-center justify-center w-full max-w-5xl mx-auto">
+    <div className="bg-yellow-300 rounded-full px-1 py-1 flex flex-wrap items-center justify-center w-full max-w-5xl mx-auto">
       {tags.map((tag, index) => (
         <button
           key={index}
@@ -11,7 +11,7 @@ const FilterBar = ({tags, selectedTags, onTagClick, onClearFilters}) => {
              rounded-full text-xs transition-all duration-200 mx-1  font-semibold whitespace-nowrap focus:outline-none ${
                selectedTags.includes(tag)
                  ? 'bg-yellow-400 text-black shadow-sm'
-                 : 'bg-yellow-200 text-gray-800 hover:bg-yellow-300'
+                 : 'bg-yellow-300 text-gray-800 hover:bg-yellow-400'
              }`}
         >
           {tag}

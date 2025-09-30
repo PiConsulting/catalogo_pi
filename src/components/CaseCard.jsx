@@ -56,10 +56,14 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
       </div>
 
       {showModal && caseItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60"
+          onClick={() => setShowModal(false)}
+        >
           <div
             className="bg-white rounded-xl shadow-2xl max-w-4xl w-full p-0 relative overflow-y-auto max-h-[90vh]"
             style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="fixed md:absolute top-6 right-6 z-50 rounded-full shadow-lg text-gray-900 hover:text-gray-800 text-3xl w-12 h-12 flex items-center justify-center border border-yellow-400"
@@ -116,7 +120,9 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                         className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
                         style={{position: 'absolute', top: '20px', left: '20px'}}
                       >
-                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="font-bold text-gray-800 text-sm mb-1">
+                          {caseItem.process[0].title}
+                        </span>
                         <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
                           {caseItem.process[0].description}
                         </span>
@@ -145,7 +151,9 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                         className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
                         style={{position: 'absolute', top: '20px', left: '20px'}}
                       >
-                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="font-bold text-gray-800 text-sm mb-1">
+                          {caseItem.process[1].title}
+                        </span>
                         <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
                           {caseItem.process[1].description}
                         </span>
@@ -174,7 +182,9 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                         className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
                         style={{position: 'absolute', top: '20px', left: '20px'}}
                       >
-                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="font-bold text-gray-800 text-sm mb-1">
+                          {caseItem.process[2].title}
+                        </span>
                         <span className="text-gray-600 text-center" style={{fontSize: '10px'}}>
                           {caseItem.process[2].description}
                         </span>
@@ -203,7 +213,9 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                         className="w-[120px] h-[120px] bg-white rounded-full shadow-md flex flex-col items-center justify-center z-10"
                         style={{position: 'absolute', top: '20px', left: '20px'}}
                       >
-                        <span className="font-bold text-gray-800 text-sm mb-1">Proceso</span>
+                        <span className="font-bold text-gray-800 text-sm mb-1">
+                          {caseItem.process[3].title}
+                        </span>
                         <span
                           className="text-gray-600 text-xs text-center"
                           style={{fontSize: '10px'}}
@@ -256,10 +268,10 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                 <h2 className="font-bold text-gray-900 text-xl mb-2 flex items-center">
                   Impacto logrado <span className="ml-2">🖖</span>
                 </h2>
-                <div className="bg-yellow-200 rounded-xl p-6 flex flex-col md:flex-row gap-6 justify-between items-center">
+                <div className="bg-yellow-300 rounded-xl p-6 flex flex-col md:flex-row gap-6 justify-between items-center">
                   {caseItem.impact?.map((logro, index) => (
                     <div key={index} className="text-center flex-1">
-                      <p className="text-gray-700 text-base mb-2">{logro.description}</p>
+                      <p className="text-black text-base mb-2">{logro.description}</p>
                       <span className="font-bold text-gray-800">{logro.label}</span>
                     </div>
                   ))}
@@ -280,6 +292,21 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
                     className="object-contain rounded-xl shadow-md mx-auto"
                     style={{background: 'white', maxWidth: '700px', width: '100%', height: 'auto'}}
                   />
+                </div>
+              )}
+              {caseItem && Array.isArray(caseItem.technology) && caseItem.technology.length > 0 && (
+                <div className="w-full flex flex-col items-left justify-center pb-8">
+                  <h2 className="font-bold text-gray-900 text-xl mb-4">Tecnologías usadas 💻</h2>
+                  <div className="flex flex-wrap gap-2 justify-left">
+                    {caseItem.technology.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-yellow-300 border border-yellow-400 rounded-full px-1 py-1 text-gray-800 text-xs font-medium shadow-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               )}
             </section>

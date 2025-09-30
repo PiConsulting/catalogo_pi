@@ -20,25 +20,37 @@
     "icon": "/img/banca.png",
     "url": "/categoria/banca",
     "tags": ["Seguridad", "Clientes"],
+
     "cases": {
       "success": [
         {
           "name": "Banco Agrario de Colombia -> Inboxia",
           "images": ["/img/Casoexito/alcaldiaBogota.png"],
+          "technology": [
+            "Azure Logic Apps",
+            "Azure OpenAI",
+            "Azure Document Intelligence",
+            "Azure Cosmos DB",
+            "Power BI"
+          ],
           "descriptions": [
             "Automatizamos con IA la gestión del buzón jurídico del Banco Agrario, reduciendo en 70% los tiempos de procesamiento y mejorando cumplimiento y eficiencia legal."
           ],
           "process": [
             {
+              "title": "Problemática",
               "description": "Sobrecarga de correos legales y gestión manual ineficiente."
             },
             {
+              "title": "Solución",
               "description": "Automatización con IA y NLP en Azure."
             },
             {
+              "title": "Capacidades",
               "description": "Integración con Outlook y servicios Azure escalables."
             },
             {
+              "title": "Beneficios",
               "description": "70% menos tiempo y mayor eficiencia legal."
             }
           ],

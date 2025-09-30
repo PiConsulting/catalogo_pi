@@ -1,6 +1,13 @@
 import {Link} from 'react-router-dom'
 
 const CategoryCard = ({category, className = ''}) => {
+  // Ocultar si no hay casos de éxito ni de uso
+  const hasCases =
+    (category.cases &&
+      Array.isArray(category.cases.success) &&
+      category.cases.success.length > 0) ||
+    (category.cases && Array.isArray(category.cases.use) && category.cases.use.length > 0)
+  if (!hasCases) return null
   return (
     <Link
       to={category.url}
