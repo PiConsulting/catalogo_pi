@@ -98,6 +98,34 @@
           "images": ["/img/Casoexito/chimu.png"],
           "descriptions": ["Caso de éxito en agro: CHIMU - Predicción de pesos de pollos."],
           "logos": [],
+          "technology": [
+            "Microsoft Azure",
+            "Azure Databricks",
+            "MLflow",
+            "XGBoost",
+            "LightGBM",
+            "Power BI",
+            "Microsoft Fabric",
+            "Python (pkl export)"
+          ],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Imposibilidad de predecir el peso óptimo del ave."
+            },
+            {
+              "title": "Solución",
+              "description": "Modelo predictivo en Azure con algoritmos por sexo."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Arquitectura escalable con Databricks, MLFlow y Power BI."
+            },
+            {
+              "title": "Beneficios",
+              "description": "Alta precisión, menor desperdicio y más rentabilidad."
+            }
+          ],
           "info": [],
           "context": "Chimu es una empresa avícola peruana con planteles en Olmos y Guadalupito dedicada a la producción de pollos de engorde. Su desafío principal era identificar con exactitud el momento en el que cada ave alcanzaba su peso ideal de comercialización. Debido a la influencia de múltiples factores —sexo, edad, tipos de alimento, consumo, mortalidad y condiciones ambientales—, la compañía necesitaba una herramienta que le permitiera tomar decisiones basadas en datos y no únicamente en experiencia previa.",
           "painPoints": "Antes del proyecto, las decisiones se tomaban de manera empírica, lo que generaba una alta variabilidad entre campañas y entre sexos de aves. Esto derivaba en ineficiencias en el uso de los recursos alimentarios, pérdidas económicas por vender fuera del momento óptimo, y retrasos en la instalación de nuevas campañas. La falta de precisión impactaba directamente en la rentabilidad y en la planificación logística.",
@@ -115,6 +143,31 @@
           "images": ["/img/Casoexito/gdm.png"],
           "descriptions": ["Caso de éxito en agro: GDM - NEOCHAT."],
           "logos": [],
+          "technology": [
+            "RAG (Retrieval Augmented Generation)",
+            "LLM (Large Language Models)",
+            "Conversational AI",
+            "Web Integration (Landing Page)",
+            "Scalable Architecture"
+          ],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Información difícil de encontrar y respuestas lentas."
+            },
+            {
+              "title": "Solución",
+              "description": "Asistente conversacional NEOCHAT en la web."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Arquitectura RAG con IA generativa y escalable."
+            },
+            {
+              "title": "Beneficios",
+              "description": "Respuestas inmediatas y mejor experiencia de usuario."
+            }
+          ],
           "info": [
             {
               "title": "Contexto del cliente",
@@ -175,12 +228,38 @@
     "cases": {
       "success": [
         {
-          "name": "CABA -> Asistente Virtual BOTI (Instituciones gubernamentales)",
+          "name": "CABA -> Asistente Virtual BOTI",
           "images": ["/img/Casoexito/boti.png"],
           "descriptions": [
             "Caso de éxito en instituciones gubernamentales: CABA - Asistente Virtual BOTI."
           ],
           "logos": [],
+          "technology": [
+            "IA Generativa (Generative AI)",
+            "GPT-3.5",
+            "Natural Language Processing (NLP)",
+            "AI-Powered Recommendation Systems",
+            "Personalized Itinerary Generation",
+            "Government AI Applications"
+          ],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Respuestas limitadas y alta carga operativa."
+            },
+            {
+              "title": "Solución",
+              "description": "IA Generativa para consultas ciudadanas."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Azure OpenAI, Cognitive Search y seguridad Zero Trust."
+            },
+            {
+              "title": "Beneficios",
+              "description": "50% menos carga y más de 2M interacciones mensuales."
+            }
+          ],
           "context": "El Gobierno de la Ciudad de Buenos Aires buscaba dar un nuevo salto en innovación digital con el objetivo de brindar a ciudadanos y visitantes una experiencia única: poder consultar de manera natural y conversacional sobre planes turísticos, culturales y de entretenimiento, accediendo a información actualizada, confiable y accesible en todo momento.",
           "painPoints": "El desafío principal era desarrollar una funcionalidad que no solo brindara información, sino que recomendara actividades personalizadas en función de los intereses del usuario. Con los mecanismos tradicionales de búsqueda y FAQ no era posible interpretar matices, preferencias ni la intención real detrás de cada consulta. La falta de interpretación semántica limitaba la fluidez de la experiencia y dificultaba ofrecer respuestas verdaderamente relevantes y humanas.",
           "solution": "Desde PI Consulting, a través de la Línea de Negocio de Inteligencia Artificial, se desarrolló e integró una nueva capacidad en BOTI, el asistente virtual del Gobierno porteño. Esta innovación se convirtió en el primer caso público de aplicación de IA generativa dentro del ecosistema de BOTI, permitiendo generar itinerarios de visitas y recomendaciones de eventos personalizadas de manera natural. Un aspecto clave fue el momento de implementación, ya que el proyecto se lanzó en los primeros meses del boom global de la GenAI utilizando inicialmente el modelo GPT-3.5. Esto posicionó al Gobierno de la Ciudad como pionero en la región en el uso de esta tecnología disruptiva aplicada a la experiencia ciudadana.",
@@ -198,6 +277,39 @@
             "Automatizamos con IA la clasificación de solicitudes ciudadanas en Bogotá, logrando 94% de precisión y mejorando la atención a miles de personas."
           ],
           "logos": [],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Clasificación manual lenta y con errores de 40,000 peticiones mensuales."
+            },
+            {
+              "title": "Solución",
+              "description": "IA multiagente que automatiza la clasificación con más del 94% de precisión."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Arquitectura Azure con Azure Functions, OpenAI, Cosmos DB y Logic Apps."
+            },
+            {
+              "title": "Beneficios",
+              "description": "Mejora tiempos y reduce carga, beneficiando a 400,000 usuarios mensuales."
+            }
+          ],
+          "technology": [
+            "Microsoft Azure",
+            "Azure Functions",
+            "Azure Logic Apps",
+            "Azure Cosmos DB",
+            "Azure Storage",
+            "Azure Document Intelligence",
+            "Azure OpenAI",
+            "Generative AI",
+            "Multi-Agent Systems",
+            "AI-Powered Automation",
+            "Request Classification",
+            "Quality Metrics (Consistency, Justification)",
+            "Scalable Architecture"
+          ],
           "context": "La Alcaldía de Bogotá recibe más de 40.000 solicitudes ciudadanas mensuales a través de “Bogotá Te Escucha”. Estas PQRS (Peticiones, Quejas, Reclamos y Sugerencias) deben ser clasificadas y enviadas a 63 entidades diferentes para su gestión. El proceso era manual, costoso, con alto riesgo de error y generaba una gran sobrecarga operativa.",
           "painPoints": "El sistema manual ralentizaba la atención ciudadana, aumentaba los tiempos de respuesta y requería una gran cantidad de recursos humanos. Además, la clasificación poco precisa afectaba la calidad del servicio, generaba frustración en los ciudadanos y limitaba la capacidad de escalar el sistema a más áreas de gobierno.",
           "solution": "Pi Consulting desarrolló e implementó una solución basada 100% en Microsoft Azure, utilizando IA generativa y un sistema multiagente. La arquitectura incluye Azure Functions, Logic Apps, Cosmos DB, Azure Storage, Document Intelligence y Azure OpenAI. La solución automatiza la clasificación de solicitudes con una precisión del 94%, determina si una petición puede resolverse automáticamente o requiere intervención humana, y permite escalar el modelo a las 63 entidades del distrito. Además, incorpora métricas de calidad como “consistencia” y “fundamentación” para asegurar transparencia y trazabilidad.",
@@ -227,6 +339,34 @@
           "images": ["/img/Casoexito/ypf.png"],
           "descriptions": ["Caso de éxito en oil & gas: YPF - PYWO."],
           "logos": [],
+          "technology": [
+            "Conversational AI",
+            "Voice Recognition",
+            "Natural Language Processing (NLP)",
+            "AI-Powered Ticketing System",
+            "Document Interaction Modules",
+            "Database Querying with Natural Language",
+            "Information Retrieval",
+            "Operational Intelligence"
+          ],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Registro manual lento de tickets y consulta dispersa de información."
+            },
+            {
+              "title": "Solución",
+              "description": "Asistente IA para carga ágil de tickets y consultas conversacionales."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Azure OpenAI, Cognitive Search, funciones serverless y seguridad avanzada."
+            },
+            {
+              "title": "Beneficios",
+              "description": "Mayor eficiencia, reducción de errores y acceso rápido a datos."
+            }
+          ],
           "context": "El cliente fue YPF, dentro de la industria petrolera, específicamente el área de Perforaciones y Work Over, origen del nombre de la iniciativa PyWO. Las principales necesidades planteadas se centraron en la optimización del proceso de carga de tickets de soporte y en la disponibilización ágil de información operativa",
           "painPoints": "Las problemáticas detectadas correspondían a las necesidades mencionadas. En primer lugar, la carga de tickets demandaba un tiempo operativo considerable y generaba inconsistencias en el registro de incidentes. Adicionalmente, los responsables y la gerencia requerían acceder a procedimientos y datos operativos que se encontraban dispersos en múltiples documentos y bases de datos, lo que implicaba realizar búsquedas manuales que retrasaban la toma de decisiones.",
           "solution": "Para abordar estos desafíos, se implementó un asistente conversacional con inteligencia artificial, que permite a los operarios registrar tickets de soporte de forma ágil mediante voz o texto. La solución garantiza la captura completa de información con mínima intervención manual.Asimismo, se desarrollaron módulos de interacción con documentos y bases de datos, facilitando que responsables y gerencias consulten información operativa y procedimientos en lenguaje natural, de manera rápida y sencilla. Esto redujo los tiempos de búsqueda y mejoró la disponibilidad de información clave para la operación diaria.",
@@ -256,6 +396,38 @@
           "images": ["/img/Casoexito/arcor.png"],
           "descriptions": ["Caso de éxito en retail: ARCOR - Scraping de Noticias."],
           "logos": [],
+          "technology": [
+            "Microsoft Azure",
+            "Azure Databricks",
+            "Web Scraping",
+            "Yahoo Finance API",
+            "GDELT Integration",
+            "Generative AI",
+            "Semantic Classification",
+            "Sentiment Analysis (Finance-Oriented)",
+            "Automated Alerts",
+            "Webex Integration",
+            "Web Dashboard",
+            "Cloud-Based Architecture"
+          ],
+          "process": [
+            {
+              "title": "Problemática",
+              "description": "Falta de anticipación ante fluctuaciones y búsqueda manual de noticias."
+            },
+            {
+              "title": "Solución",
+              "description": "Sistema automatizado de scraping y análisis con IA generativa."
+            },
+            {
+              "title": "Capacidades",
+              "description": "Azure Databricks, scraping, análisis semántico y alertas automáticas."
+            },
+            {
+              "title": "Beneficios",
+              "description": "Alertas tempranas, mejor toma de decisiones y eficiencia en análisis."
+            }
+          ],
           "info": [
             {
               "title": "Contexto del cliente",
