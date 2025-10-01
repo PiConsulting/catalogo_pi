@@ -1,8 +1,23 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
 
+import {useEffect} from 'react'
+
 const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
   const [showModal, setShowModal] = useState(false)
+  const [showProcess, setShowProcess] = useState(
+    typeof window !== 'undefined' ? window.innerWidth >= 650 : false,
+  )
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowProcess(window.innerWidth >= 650)
+    }
+    window.addEventListener('resize', handleResize)
+    // Set initial value
+    setShowProcess(window.innerWidth >= 650)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <>
@@ -105,7 +120,7 @@ const CaseCard = ({caseItem, categorySlug, caseIndex}) => {
 
             {/* Secciones dinámicas */}
             <section className="max-w-3xl mx-auto px-8 pb-8">
-              {caseItem.process && caseItem.process.length === 4 && (
+              {showProcess && caseItem.process && caseItem.process.length === 4 && (
                 <div className="w-full flex flex-col justify-center items-center pb-8">
                   <div
                     className="flex justify-center items-end gap-8 mt-8 w-full"
